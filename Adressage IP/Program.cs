@@ -11,7 +11,6 @@ namespace Adressage_IP
             static void Main(string[] args)
 
             {
-            /*
                 int[] ip = new int[4];
 
                 int[,] ipBin = new int[4, 8];
@@ -26,9 +25,9 @@ namespace Adressage_IP
 
                 int cidr;
 
-                ip = SaisieIP();
+                ip = Nolan.SaisieIP();
 
-                ipBin = DecimalBinaire(ip);
+                ipBin = Gwenael.DecimalBinaire(ip);
 
                 Console.WriteLine("Adresse IP : " + ip[0] + "." + ip[1] + "." + ip[2] + "." + ip[3]);
 
@@ -36,26 +35,26 @@ namespace Adressage_IP
 
                 cidr = int.Parse(Console.ReadLine());
 
-                masqueBin = CalculMasque(cidr);
+                masqueBin = Mathis.CalculMasque(cidr);
 
-                ipReseauBin = CalculReseau(ipBin, masqueBin);
+                ipReseauBin = Jeremie.CalculReseau(ipBin, masqueBin);
 
-                ipReseau = BinDeci(ipReseauBin);
+                ipReseau = Youn.BinDeci(ipReseauBin);
 
-                masque = BinDeci(masqueBin);
+                masque = Youn.BinDeci(masqueBin);
 
                 Console.WriteLine("Adresse réseau : " + ipReseau[0] + "." + ipReseau[1] + "." + ipReseau[2] + "." + ipReseau[3]);
 
                 Console.WriteLine("Masque : " + masque[0] + "." + masque[1] + "." + masque[2] + "." + masque[3]);
 
-                AfficheIPbin("Adresse IP en Binaire : \t", ipBin);
+                Geoffroy.AfficheIPbin("Adresse IP en Binaire : \t", ipBin);
 
-                AfficheIPbin("Masque en binaire : \t\t", masqueBin);
+                Geoffroy.AfficheIPbin("Masque en binaire : \t\t", masqueBin);
 
-                AfficheIPbin("Adresse réseau en binaire :\t", ipReseauBin);
-                */
-            int[,] tab = new int[,] { } 
-            Geoffroy.AfficheIPbin("Adresse réseau en binaire :\t",[]);
+                Geoffroy.AfficheIPbin("Adresse réseau en binaire :\t", ipReseauBin);
+                
+                int[,] tab = new int[,] { } 
+                Geoffroy.AfficheIPbin("Adresse réseau en binaire :\t",[]);
 
                 Console.ReadKey();
             }
